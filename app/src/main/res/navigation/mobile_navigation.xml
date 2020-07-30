@@ -3,23 +3,41 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@id/navigation_clientes">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.teo.businessassistant.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/navigation_clientes"
+        android:name="com.teo.businessassistant.ui.Clientes.ClientesFragment"
+        android:label="@string/Clientes"
+        tools:layout="@layout/fragment_clientes" >
+        <action
+            android:id="@+id/action_navigation_clientes_to_navigation_nuevocliente"
+            app:destination="@id/navigation_nuevocliente" />
+    </fragment>
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.teo.businessassistant.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_inventario"
+        android:name="com.teo.businessassistant.ui.Inventario.InventarioFragment"
+        android:label="@string/inventario"
+        tools:layout="@layout/fragment_inventario" >
+        <action
+            android:id="@+id/next_to_nuevoproducto"
+            app:destination="@id/navigation_nuevoproducto" />
+    </fragment>
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.teo.businessassistant.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_compras"
+        android:name="com.teo.businessassistant.ui.Compras.ComprasFragment"
+        android:label="@string/title_Compras"
+        tools:layout="@layout/fragment_compras" />
+    <fragment
+        android:id="@+id/navigation_nuevocliente"
+        android:name="com.teo.businessassistant.Fragments.NuevoclienteFragment"
+        android:label="fragment_nuevocliente"
+        tools:layout="@layout/fragment_nuevocliente" />
+    <fragment
+        android:id="@+id/navigation_nuevoproducto"
+        android:name="com.teo.businessassistant.Fragments.NuevoproductoFragment"
+        android:label="fragment_nuevoproducto"
+        tools:layout="@layout/fragment_nuevoproducto" />
 </navigation>
