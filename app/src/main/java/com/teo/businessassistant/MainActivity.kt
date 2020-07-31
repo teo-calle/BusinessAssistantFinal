@@ -69,6 +69,8 @@ class MainActivity : AppCompatActivity() {
             when(destination.id){
                 R.id.navigation_nuevoproducto -> hideBottomNav() /*******Aquí solo lo oculta estando en nuevo elemento****/
                 R.id.navigation_nuevocliente -> hideBottomNav()
+                R.id.navigation_maps -> hideBottomNav()
+                R.id.navigation_inventario -> hideBottomNav()
                 else -> showBottomNav()
             }
 
