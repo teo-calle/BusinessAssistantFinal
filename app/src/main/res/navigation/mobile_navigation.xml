@@ -38,11 +38,11 @@
     <fragment
         android:id="@+id/navigation_compras"
         android:name="com.teo.businessassistant.ui.Compras.ComprasFragment"
-        android:label="fragment_compras"
+        android:label="@string/title_compras"
         tools:layout="@layout/fragment_compras" />
     <fragment
         android:id="@+id/navigation_maps"
         android:name="com.teo.businessassistant.ui.maps.MapsFragment"
-        android:label="fragment_maps"
+        android:label="@string/title_maps"
         tools:layout="@layout/fragment_maps" />
 </navigation>
