@@ -26,18 +26,18 @@
     </fragment>
 
     <fragment
-        android:id="@+id/navigation_compras"
-        android:name="com.teo.businessassistant.ui.Compras.ComprasFragment"
-        android:label="@string/title_Compras"
-        tools:layout="@layout/fragment_compras" />
-    <fragment
         android:id="@+id/navigation_nuevocliente"
         android:name="com.teo.businessassistant.Fragments.NuevoclienteFragment"
-        android:label="fragment_nuevocliente"
+        android:label="@string/nuevo_cliente"
         tools:layout="@layout/fragment_nuevocliente" />
     <fragment
         android:id="@+id/navigation_nuevoproducto"
         android:name="com.teo.businessassistant.Fragments.NuevoproductoFragment"
-        android:label="fragment_nuevoproducto"
+        android:label="@string/nuevo_producto"
         tools:layout="@layout/fragment_nuevoproducto" />
+    <fragment
+        android:id="@+id/navigation_compras"
+        android:name="com.teo.businessassistant.ui.Compras.ComprasFragment"
+        android:label="fragment_compras"
+        tools:layout="@layout/fragment_compras" />
 </navigation>

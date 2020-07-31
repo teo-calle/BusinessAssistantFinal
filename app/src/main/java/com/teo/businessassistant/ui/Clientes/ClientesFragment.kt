@@ -27,6 +27,7 @@ class ClientesFragment : Fragment() {
 
         bt_nuevo.setOnClickListener {
             findNavController().navigate(R.id.next_to_nuevocliente)
+            btf_menu.collapse()
         }
     }
 }
