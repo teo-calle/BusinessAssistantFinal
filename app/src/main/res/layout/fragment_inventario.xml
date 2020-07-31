@@ -37,7 +37,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView2">
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rv_inventario"
+                android:id="@+id/rv_clientes"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 tools:listitem="@layout/inventario_item"/>

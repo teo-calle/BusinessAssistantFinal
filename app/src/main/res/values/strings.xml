@@ -43,10 +43,17 @@
     <string name="dig_precio">Digite el precio</string>
     <string name="add">Añadir</string>
     <string name="cancel">Cancelar</string>
-    <string name="nuevo_producto">Nuevo producto</string>
-    <string name="titulo_resgistrarcompra">Registrar Compra</string>
-    <string name="elegir">Elegir un cliente</string>
-    <string name="compras">Seleccionar productos</string>
-    <string name="total">Total a pagar</string>
-    <string name="pagar">Pagar</string>
+    <string name="borrar">Borrar</string>
+    <string name="nombre">Digite nombre</string>
+    <string name="buscar_cliente">Buscar</string>
+    <string name="digite_nom_cliente">Digite nombre</string>
+    <string name="buscar">Buscar</string>
+    <string name="nuevo_telefono">Nuevo Telefono</string>
+    <string name="correo_actulizado">Digite nuevo correo</string>
+    <string name="nueva_direccion">Digite nueva dirección</string>
+    <string name="actualizar">Actualizar</string>
+    <string name="buscar_cliente_f">Buscar cliente</string>
+    <string name="eliminar_cliente_f">Eliminar Cliente</string>
+    <string name="Actualizar_cliente_f">Actualizar cliente</string>
+    <string name="nuevo_cliente_f">Nuevo cliente</string>
 </resources>

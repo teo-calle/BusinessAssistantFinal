@@ -13,6 +13,15 @@
         <action
             android:id="@+id/next_to_nuevocliente"
             app:destination="@id/navigation_nuevocliente" />
+        <action
+            android:id="@+id/next_to_actualizarcliente"
+            app:destination="@id/navigation_actualizarcliente" />
+        <action
+            android:id="@+id/next_to_buscarcliente"
+            app:destination="@id/navigation_buscarcliente" />
+        <action
+            android:id="@+id/next_to_eliminarcliente"
+            app:destination="@id/navigation_eliminarcliente" />
     </fragment>
 
     <fragment
@@ -26,18 +35,33 @@
     </fragment>
 
     <fragment
+        android:id="@+id/navigation_compras"
+        android:name="com.teo.businessassistant.ui.Compras.ComprasFragment"
+        android:label="@string/title_Compras"
+        tools:layout="@layout/fragment_compras" />
+    <fragment
         android:id="@+id/navigation_nuevocliente"
         android:name="com.teo.businessassistant.Fragments.NuevoclienteFragment"
-        android:label="@string/nuevo_cliente"
+        android:label="@string/nuevo_cliente_f"
         tools:layout="@layout/fragment_nuevocliente" />
     <fragment
         android:id="@+id/navigation_nuevoproducto"
         android:name="com.teo.businessassistant.Fragments.NuevoproductoFragment"
-        android:label="@string/nuevo_producto"
+        android:label="fragment_nuevoproducto"
         tools:layout="@layout/fragment_nuevoproducto" />
     <fragment
-        android:id="@+id/navigation_compras"
-        android:name="com.teo.businessassistant.ui.Compras.ComprasFragment"
-        android:label="fragment_compras"
-        tools:layout="@layout/fragment_compras" />
+        android:id="@+id/navigation_actualizarcliente"
+        android:name="com.teo.businessassistant.Fragments.ActualizarclienteFragment"
+        android:label="@string/Actualizar_cliente_f"
+        tools:layout="@layout/fragment_actualizarcliente" />
+    <fragment
+        android:id="@+id/navigation_buscarcliente"
+        android:name="com.teo.businessassistant.Fragments.BuscarclienteFragment"
+        android:label="@string/buscar_cliente_f"
+        tools:layout="@layout/fragment_buscarcliente" />
+    <fragment
+        android:id="@+id/navigation_eliminarcliente"
+        android:name="com.teo.businessassistant.Fragments.EliminarclienteFragment"
+        android:label="@string/eliminar_cliente_f"
+        tools:layout="@layout/fragment_eliminarcliente" />
 </navigation>
