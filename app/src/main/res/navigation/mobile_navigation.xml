@@ -11,7 +11,7 @@
         android:label="@string/Clientes"
         tools:layout="@layout/fragment_clientes" >
         <action
-            android:id="@+id/action_navigation_clientes_to_navigation_nuevocliente"
+            android:id="@+id/next_to_nuevocliente"
             app:destination="@id/navigation_nuevocliente" />
     </fragment>
 

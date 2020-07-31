@@ -1,173 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="0.8dp"
     tools:context=".ui.Clientes.ClientesFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/container"
+    <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/white"
-        android:paddingTop="?attr/actionBarSize">
-
+        android:orientation="vertical">
 
         <TextView
-            android:id="@+id/tv_nuevocliente"
+            android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
             android:fontFamily="@font/nunito_extralight"
-            android:text="@string/nuevo_cliente"
+            android:text="@string/Clientes"
             android:textAlignment="center"
-            android:textColor="@color/chocolate"
+            android:textColor="@color/business"
             android:textSize="30sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/et_nombreCliente"
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="8dp"
-            android:autofillHints=""
-            android:background="@drawable/form_bt_circle"
-            android:fontFamily="@font/nunito_extralight"
-            android:hint="@string/digitar_nombre"
-            android:textColor="@android:color/white"
-            android:textColorHint="@android:color/white"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_nuevocliente" />
+            android:layout_height="wrap_content">
 
-        <EditText
-            android:id="@+id/et_CorreoCliente"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="8dp"
-            android:autofillHints=""
-            android:background="@drawable/form_bt_circle"
-            android:fontFamily="@font/nunito_extralight"
-            android:hint="@string/digitar_correo"
-            android:inputType="textEmailAddress"
-            android:textColor="@android:color/white"
-            android:textColorHint="@android:color/white"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/et_nombreCliente" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_inventario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/clientes_item"/>
 
-        <EditText
-            android:id="@+id/et_celularCliente"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="8dp"
-            android:background="@drawable/form_bt_circle"
-            android:fontFamily="@font/nunito_extralight"
-            android:hint="@string/celular_cliente"
-            android:inputType="phone"
-            android:textColor="@android:color/white"
-            android:textColorHint="@android:color/white"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/et_CorreoCliente" />
+        </ScrollView>
 
-        <EditText
-            android:id="@+id/et_direccionCliente"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="8dp"
-            android:background="@drawable/form_bt_circle"
-            android:fontFamily="@font/nunito_extralight"
-            android:hint="@string/direccion_cliente"
-            android:inputType="text"
-            android:textColor="@android:color/white"
-            android:textColorHint="@android:color/white"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/et_celularCliente" />
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="397dp"
-            android:layout_height="28dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="8dp"
-            android:fontFamily="@font/nunito_extralight"
-            android:text="@string/tv_fecha"
-            android:textColor="@android:color/black"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/et_direccionCliente" />
-
-        <EditText
-            android:id="@+id/tvFecha"
-            android:layout_width="285dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
-            android:layout_weight="1"
-            android:focusable="false"
-            android:hint="@string/hint_fecha"
-            android:inputType="date"
-            android:textAlignment="center"
-            android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-        <ImageButton
-            android:id="@+id/iv_calendar"
-            android:layout_width="89dp"
-            android:layout_height="41dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="8dp"
-            android:layout_weight="0.4"
-            android:background="@color/colormio"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/tvFecha"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
-            app:srcCompat="@android:drawable/ic_menu_my_calendar"
-            tools:ignore="ContentDescription" />
-
-        <Button
-            android:id="@+id/bt_agregarcliente"
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:id="@+id/btf_menu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="8dp"
-            android:background="@drawable/form_bt_circle"
-            android:padding="10dp"
-            android:text="@string/agregar_cliente"
-            android:textColor="@color/chocolate"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvFecha" />
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="-8dp"
+            android:src="@drawable/ic_add"
+            app:backgroundTint="#C4C4C4"
+            android:layout_gravity="end"
+            app:fab_addButtonColorNormal="@color/business"
+            app:fab_addButtonColorPressed="#C4C4C4">
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/bt_buscar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="@color/colorPrimaryDark"
+                app:fab_icon="@drawable/ic_lupa"
+                app:fab_size="mini" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/bt_actualizar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="@color/colorPrimaryDark"
+                app:fab_icon="@drawable/ic_update"
+                app:fab_size="mini" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/bt_eliminar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="@color/colorPrimaryDark"
+                app:fab_icon="@drawable/ic_baseline_delete_sweep_24"
+                app:fab_size="mini" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/bt_nuevo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="@color/colorPrimaryDark"
+                app:fab_icon="@drawable/ic_baseline_person_add_24"
+                app:fab_size="mini" />
+
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 
-</FrameLayout>
+
+</RelativeLayout>
