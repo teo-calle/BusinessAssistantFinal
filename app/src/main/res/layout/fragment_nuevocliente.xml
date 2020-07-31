@@ -106,7 +106,7 @@
             app:layout_constraintTop_toBottomOf="@+id/et_celularCliente" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/tv_nombreelemento"
             android:layout_width="397dp"
             android:layout_height="28dp"
             android:layout_marginStart="8dp"
@@ -120,42 +120,13 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/et_direccionCliente" />
 
-        <EditText
-            android:id="@+id/tvFecha"
-            android:layout_width="285dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
-            android:layout_weight="1"
-            android:focusable="false"
-            android:hint="@string/hint_fecha"
-            android:inputType="date"
-            android:textAlignment="center"
-            android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-        <ImageButton
-            android:id="@+id/iv_calendar"
-            android:layout_width="89dp"
-            android:layout_height="41dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="8dp"
-            android:layout_weight="0.4"
-            android:background="@color/colormio"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/tvFecha"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
-            app:srcCompat="@android:drawable/ic_menu_my_calendar"
-            tools:ignore="ContentDescription" />
-
         <Button
             android:id="@+id/bt_agregarcliente"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="100dp"
             android:layout_marginEnd="8dp"
             android:background="@drawable/form_bt_circle"
             android:padding="10dp"
@@ -163,8 +134,9 @@
             android:textColor="@color/chocolate"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvFecha" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_nombreelemento" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

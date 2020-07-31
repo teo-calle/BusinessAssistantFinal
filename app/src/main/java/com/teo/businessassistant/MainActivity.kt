@@ -29,7 +29,8 @@ class MainActivity : AppCompatActivity() {
         val appBarConfiguration = AppBarConfiguration(setOf(
                 R.id.navigation_clientes,
                 R.id.navigation_inventario,
-                R.id.navigation_compras
+                R.id.navigation_compras,
+                R.id.navigation_maps
                 )
         )
 
@@ -66,14 +67,14 @@ class MainActivity : AppCompatActivity() {
 
         navController.addOnDestinationChangedListener { controller, destination, arguments ->
             when(destination.id){
+                R.id.navigation_maps -> hideBottomNav()
                 R.id.navigation_nuevoproducto -> hideBottomNav() /*******Aquí solo lo oculta estando en nuevo elemento****/
                 R.id.navigation_nuevocliente -> hideBottomNav()
+                R.id.navigation_inventario-> hideBottomNav()
                 else -> showBottomNav()
+
             }
 
-           /* when(destination.id){
-                R.id.navigation_nuevocliente -> hideBottomNav() /*******Aquí solo lo oculta estando en nuevo cliente****/
-            }*/
         }
     }
 

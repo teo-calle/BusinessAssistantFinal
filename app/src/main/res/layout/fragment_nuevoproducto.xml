@@ -84,7 +84,7 @@
                     </RadioGroup>
 
                     <ImageView
-                        android:id="@+id/imageView3"
+                        android:id="@+id/iv_foto"
                         android:layout_width="86dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -93,7 +93,7 @@
                 </LinearLayout>
 
                 <TextView
-                    android:id="@+id/textView"
+                    android:id="@+id/tv_nombreelemento"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -232,6 +232,7 @@
                     android:orientation="horizontal">
 
                     <Button
+                        android:id="@+id/bt_añadir_elemento"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="3dp"

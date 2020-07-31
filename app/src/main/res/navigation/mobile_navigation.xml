@@ -47,7 +47,7 @@
     <fragment
         android:id="@+id/navigation_nuevoproducto"
         android:name="com.teo.businessassistant.Fragments.NuevoproductoFragment"
-        android:label="fragment_nuevoproducto"
+        android:label="@string/nuevo_producto"
         tools:layout="@layout/fragment_nuevoproducto" />
     <fragment
         android:id="@+id/navigation_actualizarcliente"
@@ -64,4 +64,9 @@
         android:name="com.teo.businessassistant.Fragments.EliminarclienteFragment"
         android:label="@string/eliminar_cliente_f"
         tools:layout="@layout/fragment_eliminarcliente" />
+    <fragment
+        android:id="@+id/navigation_maps"
+        android:name="com.teo.businessassistant.ui.maps.MapsFragment"
+        android:label="@string/tittle_maps"
+        tools:layout="@layout/fragment_maps" />
 </navigation>
