@@ -16,5 +16,10 @@
         android:icon="@drawable/ic_cart"
         android:title="@string/title_Compras" />
 
+    <item
+        android:id="@+id/navigation_maps"
+        android:icon="@drawable/ic_map"
+        android:title="@string/title_maps" />
+
 
 </menu>
