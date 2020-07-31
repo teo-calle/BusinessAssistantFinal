@@ -67,12 +67,12 @@ class MainActivity : AppCompatActivity() {
         navController.addOnDestinationChangedListener { controller, destination, arguments ->
             when(destination.id){
                 R.id.navigation_nuevoproducto -> hideBottomNav() /*******Aquí solo lo oculta estando en nuevo elemento****/
+                R.id.navigation_nuevocliente -> hideBottomNav()
                 else -> showBottomNav()
             }
 
-            /*when(destination.id){
+           /* when(destination.id){
                 R.id.navigation_nuevocliente -> hideBottomNav() /*******Aquí solo lo oculta estando en nuevo cliente****/
-                else -> showBottomNav()
             }*/
         }
     }
